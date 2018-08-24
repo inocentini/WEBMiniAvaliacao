@@ -9,8 +9,12 @@ h3{
 	text-align: center;
 }
 
-.firstBG{
+.backgroundBody{
 	background-image: url("background.jpg");
+}
+
+.principal{
+	
 }
 
 .backgroundPanel{
