@@ -6,22 +6,29 @@
 	<title></title>
 </head>
 <body class="backgroundBody">
-	<div class="principal">
-		<div class="backgroundPanel">
-			<div id="painel">
-				<h3>CALCULADORA</h3>
-				<div class="painelButton">
-					<button>X</button>
-					<button>/</button>
-					<div class="direita"></div>
-					<button>+</button>
-					<button>-</button>
+	<div class="bgPrincipalCalc">
+		<br><h1>ATIVIDADE DE JAVASCRIPT</h1><br>
+		<a href="Calculadora.html"><button id="btnOpcCalc">Calculadora</button></a>
+		<a href="Cursos.html"><button id="btnOpcCurso">Cursos</button></a>
+		<a href="Tabela.html"><button id="btnOpcTable">Tabela</button></a>
+		<div class="bgbgPanel">
+			<div class="backgroundPanelCalc">
+				<div id="painel">
+					<h3>CALCULADORA</h3>
+					<div class="painelButton">
+						<button id="btnCalc">X</button>
+						<button id="btnCalc">-</button>
+						<div class="direita"></div>
+						<button id="btnCalc">/</button>
+						<button id="btnCalc">+</button>
+					</div>
+					<input id="iptResul" type="number" name="result" readonly="true" placeholder="RESULTADO"><br>
+					<input class="iptNum" id="iptNum1" type="number" name="num1" placeholder="número 1">
+						<input class="iptNum" id="iptNum2" type="number" name="num2" placeholder="número 2">
 				</div>
-				<input id="iptResul" type="number" name="result" readonly="true" placeholder="RESULTADO"><br>
-				<input class="iptNum" id="iptNum1" type="number" name="num1" placeholder="número 1">
-					<input class="iptNum" id="iptNum2" type="number" name="num2" placeholder="número 2">
 			</div>
 		</div>
+		<p id="desenvolvido"> Sistema desenvolvido por Mateus Inocentini - 2018.
 	</div>
 </body>
 </html>
