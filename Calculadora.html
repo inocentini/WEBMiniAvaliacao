@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script>
+		function Soma(){
+				var n1 = parseInt(document.getElementById("iptNum1").value);
+				var n2 = parseInt(document.getElementById("iptNum2").value);
+				document.getElementById("iptResul").value =(n1 + n2);
+		}
+
+		function Sub(){
+			var n1 = parseInt(document.getElementById("iptNum1").value);
+			var n2 = parseInt(document.getElementById("iptNum2").value);
+			document.getElementById("iptResul").value =(n1 - n2);
+		}
+
+		function Div(){
+			var n1 = parseInt(document.getElementById("iptNum1").value);
+			var n2 = parseInt(document.getElementById("iptNum2").value);
+			document.getElementById("iptResul").value = (n1 / n2);
+		}
+
+		function Mult(){
+			var n1 = parseInt(document.getElementById("iptNum1").value);
+			var n2 = parseInt(document.getElementById("iptNum2").value);
+			document.getElementById("iptResul").value = (n1 * n2);
+		}
+
+	</script>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="javascript.js"></script>
 	<title></title>
 </head>
 <body class="backgroundBody">
@@ -15,15 +42,15 @@
 				<div id="painel">
 					<h3>CALCULADORA</h3>
 					<div class="painelButton">
-						<button id="btnCalc">X</button>
-						<button id="btnCalc">-</button>
+						<button type="button" onclick="Mult()" id="btnCalc">X</button>
+						<button type="button" onclick="Sub()" id="btnCalc">-</button>
 						<div class="direita"></div>
-						<button id="btnCalc">/</button>
-						<button id="btnCalc">+</button>
+						<button type="button" onclick="Div()" id="btnCalc">/</button>
+						<button type="button" onclick="Soma()" id="btnCalc">+</button>
 					</div>
-					<input id="iptResul" type="number" name="result" readonly="true" placeholder="RESULTADO"><br>
-					<input class="iptNum" id="iptNum1" type="number" name="num1" placeholder="número 1">
-						<input class="iptNum" id="iptNum2" type="number" name="num2" placeholder="número 2">
+					<input id="iptResul" type="text" name="result" readonly="true" placeholder="RESULTADO"><br>
+					<input class="iptNum" id="iptNum1" type="text" name="num1" placeholder="número 1">
+					<input class="iptNum" id="iptNum2" type="text" name="num2" placeholder="número 2">
 				</div>
 			</div>
 		<p id="desenvolvido"> Sistema desenvolvido por Mateus Inocentini - 2018.
