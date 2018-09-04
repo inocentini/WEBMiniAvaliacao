@@ -185,7 +185,7 @@ input{
 
 .titulosTable{
 	margin-top: 2%;
-	margin-left: 5%;
+	margin-left: 40px;
 	margin-right: 5%;
 	border-bottom-style: solid;
 	border-bottom-color: black;
@@ -193,10 +193,6 @@ input{
 	padding-bottom: 5%;
 }
 
-.titulosTable h2{
-	float: left;
-	margin-left: 10%;
-}
 
 .titulosFooter button{
 	padding: 5px;
